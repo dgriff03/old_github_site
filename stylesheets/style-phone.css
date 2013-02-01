@@ -1,0 +1,38 @@
+.self-image{
+height:auto;
+width:240px;
+}
+
+body{
+	background-color:#00CCCC;
+}
+
+ul,li,p,h1,h2,.name{
+	font-family: 'Helvetica Neue', Helvetica, Arial, serif;
+    font-size: medium; 
+    color: black;
+}
+
+.name{
+	font-size:large;
+}
+
+.lead_item{
+	font-weight:500;
+	text-decoration:underline;
+	list-style-type:none;
+}
+
+
+.sub_item{
+	text-indent:10px;
+	list-style-type:none;
+}
+
+.current{
+	color:orange;
+}
+
+.nolist{
+	list-style-type:none;
+}
