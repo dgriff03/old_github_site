@@ -27,7 +27,8 @@ ul,li,p,h1,h2,.name{
 
 
 .sub_item{
-	list-style-type:circle;
+	text-indent:40px;
+	list-style-type:none;
 }
 
 .current{
