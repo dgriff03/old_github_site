@@ -15,7 +15,7 @@ ul,li,p,h1,h2,.name{
 }
 
 .lead_item{
-	font-weihgt:500;
+	font-weight:500;
 	text-decoration:underline;
 	list-style-type:none;
 }
@@ -23,4 +23,12 @@ ul,li,p,h1,h2,.name{
 
 .sub_item{
 	list-style-type:circle;
+}
+
+.current{
+	color:red;
+}
+
+.nolist{
+	list-style-type:none;
 }
