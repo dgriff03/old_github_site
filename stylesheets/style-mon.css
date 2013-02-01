@@ -1,0 +1,21 @@
+.self-image{
+height:auto;
+width:240px;
+}
+
+ul,li,p,h1,h2,.name{
+	font-family: 'Helvetica Neue', Helvetica, Arial, serif;
+    font-size: medium; 
+    color: black;
+}
+
+.name{
+	font-size:large;
+	color: black;
+}
+
+.lead_item{
+	font-wiehgt:500;
+	text-decoration:underline;
+}
+
