@@ -3,6 +3,11 @@ height:auto;
 width:240px;
 }
 
+body{
+	background-image:url('../background.jpg');
+	background-color:#00CCCC;
+}
+
 ul,li,p,h1,h2,.name{
 	font-family: 'Helvetica Neue', Helvetica, Arial, serif;
     font-size: medium; 
@@ -26,7 +31,7 @@ ul,li,p,h1,h2,.name{
 }
 
 .current{
-	color:red;
+	color:orange;
 }
 
 .nolist{
