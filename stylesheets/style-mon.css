@@ -15,7 +15,12 @@ ul,li,p,h1,h2,.name{
 }
 
 .lead_item{
-	font-wiehgt:500;
+	font-weihgt:500;
 	text-decoration:underline;
+	list-style-type:none;
 }
 
+
+.sub_item{
+	list-style-type:circle;
+}
