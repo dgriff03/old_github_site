@@ -63,6 +63,14 @@ p{
 	left:10px;
 }
 
+.link_bio{
+	margin:10px;
+	position:relative;
+	float: left;
+	top: 355px;
+	left:0px;
+}
+
 .headerbox{
 	width:270px;
 	height:50px;
