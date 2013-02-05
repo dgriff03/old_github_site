@@ -39,7 +39,7 @@ ul,li,p,h1,h2,.name,.textbox,.lead_item,.sub_item,.current,.nolist{
 }
 
 .current{
-	color:orange;
+	color:red;
 }
 
 .nolist{
