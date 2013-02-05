@@ -1,7 +1,7 @@
 .self-image{
 height:auto;
 width:240px;
-margin:20px;
+margin:0px 20px;
 position:absolute;
 left:10px;
 }
@@ -24,6 +24,10 @@ p{
 .name{
 	font-size:large;
 	color: black;
+	top:10px;
+	left:35px;
+	font-size:30px;
+	position:relative;
 }
 .textbox{
 	height:auto;
@@ -55,6 +59,14 @@ p{
 	margin:10px;
 	position:relative;
 	float: left;
-	top: 375px;
+	top: 355px;
 	left:10px;
+}
+
+.headerbox{
+	width:270px;
+	height:50px;
+	background-color:#CC9900;
+	margin:10px;
+	position:relative;
 }
