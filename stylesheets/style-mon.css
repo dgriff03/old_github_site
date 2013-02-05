@@ -2,6 +2,8 @@
 height:auto;
 width:240px;
 margin:20px;
+position:absolute;
+left:10px;
 }
 
 body{
@@ -47,4 +49,12 @@ p{
 
 .nolist{
 	list-style-type:none;
+}
+
+.link_index{
+	margin:10px;
+	position:relative;
+	float: left;
+	top: 375px;
+	left:10px;
 }
