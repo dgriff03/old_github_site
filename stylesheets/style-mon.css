@@ -31,7 +31,7 @@ p{
 }
 .textbox{
 	height:auto;
-	width:400px;
+	width:500px;
 	margin:0px 50px;
 }
 
@@ -67,8 +67,8 @@ p{
 	margin:10px;
 	position:relative;
 	float: left;
-	top: 355px;
-	left:0px;
+	bottom: 10px;
+	left:40px;
 }
 
 .headerbox{
