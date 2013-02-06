@@ -71,6 +71,14 @@ p{
 	left:40px;
 }
 
+.link_resume{
+	margin:10px;
+	position:relative;
+	float: left;
+	bottom: 20px;
+	left:40px;
+}
+
 .headerbox{
 	width:270px;
 	height:50px;
