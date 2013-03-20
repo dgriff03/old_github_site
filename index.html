@@ -2,17 +2,19 @@
 <html>
 <head>
 <title>Daniel Griffin</title>
-<link href="stylesheets/style-mon.css" rel="stylesheet" media="only screen and (min-device-width:801px)" />
-<link href="stylesheets/style-phone.css" rel="stylesheet" media="only screen and (max-device-width:800px)" />
-
-<meta charset="UTF-8">
+	<link href="stylesheets/style-mon.css" rel="stylesheet" media="only screen and (min-device-width:801px)" />
+	<link href="stylesheets/style-phone.css" rel="stylesheet" media="only screen and (max-device-width:800px)" />
+	<meta charset="UTF-8">
+	<!--<link rel="shortcut icon" href="icon.ico"/>-->
+	<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=true&amp;libraries=places"></script>
+	<script src="script.js"></script>
 </head>
-<body>
+<body onload="init()">
 	<div class="headerbox"><h1 class="name">Daniel Griffin</h1></div>
 	<img class="self-image" src="dan-image.jpg" alt="Image of Daniel Griffin">
 	<a class="link_index" href="resume.html">Resume</a>
 	<a class="link_index" href="bio.html">Bio</a>
 	<a class="link_index" href="projects.html">Projects</a>
-	
+	<div id="map_header">Boston MBTA RedLine<div id="map_canvas"></div></br>Click on stop for arrival times</div>
 </body>
 </html>

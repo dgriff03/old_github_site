@@ -11,7 +11,7 @@ body{
 	background-color:#EEE685;
 }
 
-ul,li,p,h1,h2,.name,.textbox,.lead_item,.sub_item,.current,.nolist{
+ul,li,p,h1,h2,.name,.textbox,.lead_item,.sub_item,.current,.nolist,#map_header{
 	font-family: 'Helvetica Neue', Helvetica, Arial, serif;
     font-size: medium; 
     color: black;
@@ -98,4 +98,32 @@ p{
 	background-color:#CC9900;
 	margin:10px;
 	position:relative;
+}
+
+
+/* Absolutely necessary for Google Maps version 3 */
+html {
+	height: 100%;
+}
+
+/* Absolutely necessary for Google Maps version 3 */
+body {
+	height: 100%;
+	margin: 0px;
+	padding: 0px;
+}
+
+#map_canvas {
+	width: 300px;
+	height: 300px;
+	position:relative;
+	left:0px;
+	top:10px;
+}
+#map_header{
+	width: 300px;
+	height: 300px;
+	position:absolute;
+	left:400px;
+	top:100px;
 }
