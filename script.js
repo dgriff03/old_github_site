@@ -17,16 +17,19 @@
 		};
 		map = new google.maps.Map(document.getElementById("map_canvas"), myOptions);
 		get_trains();		
+		my_location();
 	}
 
 	
 	function my_location(){
+	console.log("nav");
 		if (navigator.geolocation){
 			navigator.geolocation.getCurrentPosition(function(){
 				mylat = position.coords.latitude;
 				mylon = position.coords.longitude;
 				myloc = new google.maps.LatLng(mylat,mylon);
 				map.panTo(myloc);
+				console.log("pan");
 				shortest_distance();
 				
 			});
