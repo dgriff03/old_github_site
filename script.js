@@ -5,6 +5,7 @@
 	var map;
 	var trains;
 	var infowindow = new google.maps.InfoWindow();
+	var alerted = false;
 	
 	function init(){
 		mylat = "42.395428";
@@ -22,21 +23,26 @@
 
 	
 	function my_location(){
-	console.log("nav");
 		if (navigator.geolocation){
-			navigator.geolocation.getCurrentPosition(function(){
-				mylat = position.coords.latitude;
-				mylon = position.coords.longitude;
-				myloc = new google.maps.LatLng(mylat,mylon);
-				map.panTo(myloc);
-				console.log("pan");
-				shortest_distance();
-				
-			});
+			navigator.geolocation.getCurrentPosition(found_location,lost_location,{timeout:20000});
 		}
 		else{alert("Geolocation is not supported by this browser.");}
 	}
 	
+	function found_location(position){
+		mylat = position.coords.latitude;
+		mylon = position.coords.longitude;
+		myloc = new google.maps.LatLng(mylat,mylon);
+		map.panTo(myloc);
+		shortest_distance();
+	}
+	
+	function lost_location(){
+		if(!alerted){
+			alert("could not find your location");
+			alerted = true;
+		}
+	}
 	
 	function distance(lat2,lon2,lat1,lon1){
 		Number.prototype.toRad = function() {
