@@ -4,6 +4,7 @@ width:240px;
 margin:0px 20px;
 position:absolute;
 left:10px;
+top: 100px;
 }
 
 body{
@@ -93,11 +94,13 @@ p{
 }
 
 .headerbox{
-	width:270px;
-	height:50px;
+	width:100%;
+	height:75px;
 	background-color:#CC9900;
-	margin:10px;
-	position:relative;
+	margin:0px;
+	position:absolute;
+	top:0px;
+	left:0px;
 }
 
 

@@ -5,7 +5,6 @@
 	var map;
 	var trains;
 	var infowindow = new google.maps.InfoWindow();
-	var alerted = false;
 	
 	function init(){
 		mylat = "42.395428";
@@ -38,10 +37,6 @@
 	}
 	
 	function lost_location(){
-		if(!alerted){
-			alert("could not find your location");
-			alerted = true;
-		}
 	}
 	
 	function distance(lat2,lon2,lat1,lon1){
@@ -178,7 +173,6 @@
 		connect();
 		poly.setMap(map);
 		poly2.setMap(map);
-		shortest_distance();
 }
 
 
