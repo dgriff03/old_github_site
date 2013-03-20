@@ -24,7 +24,7 @@
 	
 	function my_location(){
 		if (navigator.geolocation){
-			navigator.geolocation.getCurrentPosition(found_location,lost_location,{timeout:20000});
+			navigator.geolocation.getCurrentPosition(found_location,lost_location);
 		}
 		else{alert("Geolocation is not supported by this browser.");}
 	}
@@ -83,7 +83,7 @@
 					" which is located approximately " + min_dist +
 					" miles away";
 		marker = new google.maps.Marker({	
-			position: my_location(),
+			position: myloc,
 			title: "You",
 		});
 		marker.setMap(map);
