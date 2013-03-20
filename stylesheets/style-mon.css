@@ -12,7 +12,7 @@ body{
 	background-color:#EEE685;
 }
 
-ul,li,p,h1,h2,.name,.textbox,.lead_item,.sub_item,.current,.nolist,#map_header{
+ul,li,p,h1,h2,.name,.textbox,.lead_item,.sub_item,.current,.nolist,#map_header,.description{
 	font-family: 'Helvetica Neue', Helvetica, Arial, serif;
     font-size: medium; 
     color: black;
@@ -27,12 +27,18 @@ p{
 }
 
 .name{
-	font-size:large;
 	color: black;
+	font-size:30px;
+	position:absolute;
 	top:10px;
 	left:35px;
-	font-size:30px;
-	position:relative;
+}
+
+.description{
+position:relative;
+top:30px;
+left:400px;
+
 }
 
 .textbox{
@@ -73,12 +79,17 @@ p{
 	list-style-type:none;
 }
 
+.links{
+position:absolute;
+top: 475px;
+left: 20px;
+}
+
 .link_index{
 	margin:10px;
 	position:relative;
-	float: left;
-	top: 355px;
-	left:10px;
+	top: 0px;
+	left:20px;
 }
 
 .link_bio,.link_resume{
