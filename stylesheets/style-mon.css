@@ -7,9 +7,25 @@ left:10px;
 top: 100px;
 }
 
+.wrapper{
+	max-width: max-content;
+	height: 100%;
+}
+
+
 body{
+	margin: 0px;
+	padding: 0px;
 	background-image:url('../background.jpg');
+	background-repeat:no repeat;
+	width: 100%;
+	height: 100%;
 	background-color:#EEE685;
+	position: fixed; 
+    left: 0px; 
+    top: 0px; 
+    z-index: -1;
+	background-size:100%;
 }
 
 ul,li,p,h1,h2,.name,.textbox,.lead_item,.sub_item,.current,.nolist,#map_header,.description{
@@ -26,19 +42,25 @@ p{
 	margin:20px;
 }
 
-.name{
+.title{
 	color: black;
 	font-size:30px;
-	position:absolute;
+	position:relative;
 	top:10px;
 	left:35px;
 }
 
-.description{
-position:relative;
-top:30px;
-left:400px;
+.resume{
+	position:relative;
+	top:75px;
+	left: 20px;
+	height:100%;
+}
 
+.description{
+	position:absolute;
+	top:30px;
+	left:500px;
 }
 
 .textbox{
@@ -80,12 +102,18 @@ left:400px;
 }
 
 .links{
-position:absolute;
-top: 475px;
-left: 20px;
+	position:absolute;
+	top: 475px;
+	left: 20px;
 }
 
-.link_index{
+.links{
+	position:absolute;
+	top: 55px;
+	left: 250px;
+}
+
+.link{
 	margin:10px;
 	position:relative;
 	top: 0px;
@@ -107,6 +135,7 @@ left: 20px;
 .headerbox{
 	width:100%;
 	height:75px;
+	background-image:url('../header.png');
 	background-color:#CC9900;
 	margin:0px;
 	position:absolute;
@@ -114,17 +143,16 @@ left: 20px;
 	left:0px;
 }
 
+.bio{
+	position:relative;
+	left:400px;
+	top:100px;
+}
+
 
 /* Absolutely necessary for Google Maps version 3 */
 html {
 	height: 100%;
-}
-
-/* Absolutely necessary for Google Maps version 3 */
-body {
-	height: 100%;
-	margin: 0px;
-	padding: 0px;
 }
 
 #map_canvas {
@@ -139,5 +167,5 @@ body {
 	height: 80%;
 	position:absolute;
 	left:400px;
-	top:75px;
+	top:100px;
 }
