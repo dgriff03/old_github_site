@@ -120,17 +120,20 @@ h1 {
 
 	.mainContent h2{
 		margin: 20px 0 20px 0;
+		font-size:large;
 		font-weight:bold;
 	}
 	
 	.mainContent p{
 		margin: 0 0 10px 0;
 		font-size:large;
+		font-weight:500;
 	}
 	
 	.mainContent .bio {
 		width: 80%;
 		float: left;
+		margin-bottom:25px;
 	}
 
 	.mainContent .self-image{
@@ -157,6 +160,7 @@ h1 {
 		
 	.resume ul li{
 		list-style-type:circle;
+		font-size:large;
 	}
 	
 		.resume ul li:first-child {
