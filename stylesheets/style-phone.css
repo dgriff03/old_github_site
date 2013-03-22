@@ -119,8 +119,8 @@ h1 {
 /* Homepage */
 
 .mainContent {
-	margin: 25px 0 0 17px;
-	width: 850px;
+	margin: 10% 0;
+	width: 100%;
 }
 
 	.mainContent h2{
@@ -133,7 +133,7 @@ h1 {
 	}
 	
 	.mainContent .bio {
-		width: 500px;
+		width: 80%;
 		float: right;
 	}
 
