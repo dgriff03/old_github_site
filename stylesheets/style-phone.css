@@ -54,7 +54,7 @@ html,body {
 }
 
 body{
-	background-color:#EEE685;
+	background-color:#CC9900;
 }
 
 .wrapper{
@@ -129,7 +129,7 @@ h1 {
 	
 	.mainContent .bio {
 		width: 100%;
-		margin: 0 10%;
+		margin: 10%;
 		float: left;
 	}
 
