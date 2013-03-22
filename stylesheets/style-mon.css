@@ -194,6 +194,10 @@ h1 {
 		position:relative;
 	}
 	
+	.projectDiscriptions  .noeffect{
+		left:0px;
+	}
+	
 	.projectDiscriptions div{
 		padding-bottom:20px;
 	}
