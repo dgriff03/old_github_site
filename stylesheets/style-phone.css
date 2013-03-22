@@ -54,12 +54,7 @@ html,body {
 }
 
 body{
-	margin: 0;
-	background-image:url('../background.jpg');
-	background-repeat:no repeat;
 	background-color:#EEE685;
-    z-index: -1;
-	background-size: 100%;
 }
 
 .wrapper{
@@ -133,9 +128,9 @@ h1 {
 	}
 	
 	.mainContent .bio {
-		width: 80%;
+		width: 100%;
+		margin: 0 10%;
 		float: left;
-		color:blue;
 	}
 
 	.mainContent .self-image{
