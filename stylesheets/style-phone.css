@@ -51,6 +51,7 @@ table {
 /** Globals **/
 html,body {
 	height: 100%;
+	max-width: max-content;
 }
 
 body{
@@ -58,8 +59,8 @@ body{
 }
 
 .wrapper{
-	max-width: max-content;
 	height: 100%;
+	width: 100%;
 }
 
 ul,li,p,h1,h2,.name,.textbox,#map_header,.description {
