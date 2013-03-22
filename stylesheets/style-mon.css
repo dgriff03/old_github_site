@@ -1,10 +1,64 @@
-.self-image{
-height:auto;
-width:240px;
-margin:0px 20px;
-position:absolute;
-left:10px;
-top: 100px;
+/*** ADD MEYERS RESET for css ***/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+*/
+/** Globals **/
+html,body {
+	height: 100%;
+}
+
+body{
+	margin: 0;
+	background-image:url('../background.jpg');
+	background-repeat:no repeat;
+	background-color:#EEE685;
+    z-index: -1;
+	background-size: 100%;
 }
 
 .wrapper{
@@ -12,148 +66,137 @@ top: 100px;
 	height: 100%;
 }
 
-
-body{
-	margin: 0px;
-	padding: 0px;
-	background-image:url('../background.jpg');
-	background-repeat:no repeat;
-	width: 100%;
-	height: 100%;
-	background-color:#EEE685;
-	position: fixed; 
-    left: 0px; 
-    top: 0px; 
-    z-index: -1;
-	background-size:100%;
-}
-
-ul,li,p,h1,h2,.name,.textbox,.lead_item,.sub_item,.current,.nolist,#map_header,.description{
+ul,li,p,h1,h2,.name,.textbox,#map_header,.description {
 	font-family: 'Helvetica Neue', Helvetica, Arial, serif;
     font-size: medium; 
-    color: black;
+    color: #000;
 }
 
-p{
+.bio p {
 	text-indent:50px;
 }
 
-.example_text{
-	margin:20px;
+h1 {
+	font-size:30px;
+	margin: 25px 0 0 35px;
 }
 
-.title{
-	color: black;
-	font-size:30px;
-	position:relative;
-	top:10px;
-	left:35px;
+.clear {
+	clear: both;
 }
+
+/** Header Section **/
+
+.header {
+	width:100%;
+	min-height:75px;
+	background-image:url('../header.png');
+	background-color:#CC9900;
+}
+	
+	.header h1, .header h2{
+		font-weight:bold;
+	}
+	
+	.header h1, .header h2, .header .navigation {
+		float: left;
+	}
+	
+	.header h2, .header .navigation {
+		margin: 35px 0 0 50px;
+	}
+	
+		.header .navigation a {
+			padding-left: 10px; 
+			text-decoration: none;
+		}
+		
+		.header .navigation a:hover {
+			text-decoration: underline;
+		}
+	
+/* Homepage */
+
+.mainContent {
+	margin: 25px 0 0 17px;
+	width: 850px;
+}
+
+	.mainContent h2{
+		margin: 20px 0 20px 0;
+		font-weight:bold;
+	}
+	
+	.mainContent p{
+		margin: 0 0 10px 0;
+	}
+	
+	.mainContent .bio {
+		width: 500px;
+		float: right;
+	}
+
+	.mainContent .self-image{
+		float: left;
+		height: auto;
+		width: 240px;
+		margin: 0px 20px;
+	}
+
+
+/* Resume */
 
 .resume{
-	position:relative;
-	top:75px;
-	left: 20px;
-	height:100%;
+	margin: 20px 0 50px 20px;
 }
-
-.description{
-	position:absolute;
-	top:30px;
-	left:500px;
-}
-
-.textbox{
-	height:auto;
-	width:500px;
-	margin:0px 50px;
-}
-
-.textbox_small{
-	height:auto;
-	width:400px;
-	margin:0px 50px;
-	text-indent:0px;
-}
-
-.link_example{
-	left:80px;
-	position:relative;
-}
-
-.lead_item{
-	font-weight:500;
-	text-decoration:underline;
-	list-style-type:none;
-}
-
-
-.sub_item{
-	text-indent:50px;
-	list-style-type:none;
-}
-
-.current{
+	
+	.resume ul{
+		padding: 20px 0 0 20px;
+	}
+	
+	.resume ul .sectionDetail{
+		text-indent:50px;
+		list-style-type:none;
+	}
+		
+	.resume ul li{
+		list-style-type:circle;
+	}
+	
+		.resume ul li:first-child {
+			font-weight:500;
+			text-decoration:underline;
+			list-style-type:none;
+		}	
+		
+.currentClass {
 	color:red;
 }
 
-.nolist{
+.resume .sectionNote {
 	list-style-type:none;
 }
 
-.links{
-	position:absolute;
-	top: 475px;
-	left: 20px;
-}
+/* Projects */
 
-.links{
-	position:absolute;
-	top: 55px;
-	left: 250px;
+.projectDiscriptions{
+	height: auto;
+	width: 440px;
+	margin:20px 35px 20px 0;
 }
-
-.link{
-	margin:10px;
-	position:relative;
-	top: 0px;
-	left:20px;
-}
-
-.link_bio,.link_resume{
-	margin:10px;
-	position:relative;
-	float: left;
-	bottom: 10px;
-	left:40px;
-}
-
-.link_resume{
-	bottom: 20px;
-}
-
-.headerbox{
-	width:100%;
-	height:75px;
-	background-image:url('../header.png');
-	background-color:#CC9900;
-	margin:0px;
-	position:absolute;
-	top:0px;
-	left:0px;
-}
-
-.bio{
-	position:relative;
-	left:400px;
-	top:100px;
-}
-
-
-/* Absolutely necessary for Google Maps version 3 */
-html {
-	height: 100%;
-}
+	
+	.projectDiscriptions p{
+		margin: 0 0 20px 20px;	
+	}
+	
+	.projectDiscriptions a{
+		left:80px;
+		position:relative;
+	}
+	
+	.projectDiscriptions div{
+		padding-bottom:20px;
+	}
 
 #map_canvas {
 	width: 100%;
