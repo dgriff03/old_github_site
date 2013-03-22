@@ -134,7 +134,8 @@ h1 {
 	
 	.mainContent .bio {
 		width: 80%;
-		float: right;
+		float: left;
+		color:blue;
 	}
 
 	.mainContent .self-image{
