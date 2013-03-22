@@ -1,47 +1,203 @@
-.self-image{
-height:auto;
-width:80%;
-margin:10%;
+/*** ADD MEYERS RESET for css ***/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
 }
 
+
+/** Globals **/
+html,body {
+	height: 100%;
+}
 
 body{
+	margin: 0;
+	background-image:url('../background.jpg');
+	background-repeat:no repeat;
 	background-color:#EEE685;
+    z-index: -1;
+	background-size: 100%;
 }
 
-ul,li,p,h1,h2,.name,.textbox,.lead_item,.sub_item,.current,.nolist{
+.wrapper{
+	max-width: max-content;
+	height: 100%;
+}
+
+ul,li,p,h1,h2,.name,.textbox,#map_header,.description {
 	font-family: 'Helvetica Neue', Helvetica, Arial, serif;
     font-size: medium; 
-    color: black;
+    color: #000;
 }
 
-
-.textbox{
-	height:auto;
-	width:200px;
-	margin:0px;
+.bio p {
+	text-indent:50px;
 }
 
-.name{
-	font-size:large;
+h1 {
+	font-size:30px;
+	margin: 25px 0 0 35px;
 }
 
-.lead_item{
-	font-weight:500;
-	text-decoration:underline;
+.clear {
+	clear: both;
+}
+
+/** Header Section **/
+
+.header {
+	width:100%;
+	min-height:75px;
+	background-image:url('../header.png');
+	background-color:#CC9900;
+}
+	
+	.header h1, .header h2{
+		font-weight:bold;
+	}
+	
+	.header h1, .header h2, .header .navigation {
+		float: left;
+	}
+	
+	.header h2, .header .navigation {
+		margin: 35px 0 0 50px;
+	}
+	
+		.header .navigation a {
+			padding-left: 10px; 
+			text-decoration: none;
+		}
+		
+		.header .navigation a:hover {
+			text-decoration: underline;
+		}
+	
+/* Homepage */
+
+.mainContent {
+	margin: 25px 0 0 17px;
+	width: 850px;
+}
+
+	.mainContent h2{
+		margin: 20px 0 20px 0;
+		font-weight:bold;
+	}
+	
+	.mainContent p{
+		margin: 0 0 10px 0;
+	}
+	
+	.mainContent .bio {
+		width: 500px;
+		float: right;
+	}
+
+	.mainContent .self-image{
+		height:auto;
+		width:80%;
+		margin:10%;
+	}
+
+	
+/* Resume */
+
+.resume{
+	margin: 20px 0 50px 20px;
+}
+	
+	.resume ul{
+		padding: 20px 0 0 20px;
+	}
+	
+	.resume ul .sectionDetail{
+		text-indent:50px;
+		list-style-type:none;
+	}
+		
+	.resume ul li{
+		list-style-type:circle;
+	}
+	
+		.resume ul li:first-child {
+			font-weight:500;
+			text-decoration:underline;
+			list-style-type:none;
+		}	
+		
+.currentClass {
+	color:blue;
+}
+
+.resume .sectionNote {
 	list-style-type:none;
 }
 
+/* Projects */
 
-.sub_item{
-	text-indent:5%;
-	list-style-type:none;
+.projectDiscriptions{
+	height: auto;
+	width: 440px;
+	margin:20px 35px 20px 0;
 }
-
-.current{
-	color:red;
-}
-
-.nolist{
-	list-style-type:none;
-}
+	
+	.projectDiscriptions p{
+		margin: 0 0 20px 20px;	
+	}
+	
+	.projectDiscriptions a{
+		left:80px;
+		position:relative;
+	}
+	
+	.projectDiscriptions  .noeffect{
+		left:0px;
+	}
+	
+	.projectDiscriptions div{
+		padding-bottom:20px;
+	}
