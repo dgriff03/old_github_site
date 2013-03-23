@@ -148,7 +148,7 @@ h1 {
 /* Resume */
 
 .resume{
-	margin: 20px 0 50px 20px;
+	margin: 20px 0 50px 220px;
 }
 	
 	.resume ul{
@@ -183,7 +183,7 @@ h1 {
 .projectDiscriptions{
 	height: auto;
 	width: 440px;
-	margin:20px 35px 20px 0;
+	margin:20px 35px 20px 200px;
 }
 	
 	.projectDiscriptions p{
