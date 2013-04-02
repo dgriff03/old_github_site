@@ -149,7 +149,7 @@ h1 {
 
 .resume{
 	margin: 20px 0 50px 220px;
-	padding-bottom:50px;
+	padding-bottom:30px;
 }
 	
 	.resume ul{
@@ -213,6 +213,7 @@ h1 {
 	position:relative;
 	left:0px;
 	top:0px;
+	display: block;
 }
 
 table, th, td{
