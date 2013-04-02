@@ -119,7 +119,7 @@ h1 {
 /* Homepage */
 
 .mainContent {
-	margin: 25px 0 0 17px;
+	margin: 25px 0 0 25px;
 	width: 850px;
 }
 
@@ -149,6 +149,7 @@ h1 {
 
 .resume{
 	margin: 20px 0 50px 220px;
+	padding-bottom:50px;
 }
 	
 	.resume ul{
@@ -184,6 +185,7 @@ h1 {
 	height: auto;
 	width: 440px;
 	margin:20px 35px 20px 200px;
+	padding-bottom: 30px;
 }
 	
 	.projectDiscriptions p{
@@ -203,19 +205,24 @@ h1 {
 		padding-bottom:20px;
 	}
 
-/* Google Maps API */
+/* Maps */
 	
 #map_canvas {
 	width: 100%;
-	height: 90%;
+	height:calc(100% - 75px);
 	position:relative;
 	left:0px;
-	top:10px;
+	top:0px;
 }
-#map_header{
-	width: 50%;
-	height: 80%;
-	position:absolute;
-	left:400px;
-	top:100px;
+
+table, th, td{
+	border: 1px solid black;
+	text-align:center;
+	padding:5px;
+	border-collapse: collapse;
+}
+
+th h2{
+	background-color:red;
+	color:white;
 }
