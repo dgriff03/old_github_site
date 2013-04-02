@@ -216,6 +216,9 @@ h1 {
 	display: block;
 }
 
+#map_canvas img { max-width:none; }
+
+
 table, th, td{
 	border: 1px solid black;
 	text-align:center;
