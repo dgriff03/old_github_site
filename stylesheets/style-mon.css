@@ -213,11 +213,8 @@ h1 {
 	position:relative;
 	left:0px;
 	top:0px;
-	max-width:none !important;
 	display: block;
 }
-
-#map_canvas img { max-width:none !important; }
 
 
 table, th, td{
