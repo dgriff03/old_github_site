@@ -65,7 +65,7 @@
 		var min_stat;
 		var min_lon;
 		var min_lat;
-		dist = distance(stops[0].lan,stops[0].stop_lon,mylat,mylon);
+		dist = distance(stops[0].lat,stops[0].stop_lon,mylat,mylon);
 		for(var i = 0; i < num_stops; i++){
 			dist = distance(stops[i].lat,stops[i].lon,mylat,mylon);
 			if(i == 0){ min_dist = dist; min_stat =  stops[i].Station; min_lon =stops[i].lon; min_lat = stops[i].lat }
